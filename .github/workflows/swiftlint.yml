@@ -8,5 +8,5 @@ jobs:
     runs-on: macOS-latest
     steps:
       - name: Swiftlint
-      run: |
-        swiftlint
+        run: |
+          swiftlint
