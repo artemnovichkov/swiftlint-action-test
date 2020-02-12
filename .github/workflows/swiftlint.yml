@@ -1,11 +1,16 @@
-name: SwiftLint
-
-on:
-  pull_request:
+name: Greeting from Mona
+on: push
 
 jobs:
-  SwiftLint:
-    runs-on: macOS-latest
+  my-job:
+    name: My Job
+    runs-on: ubuntu-latest
     steps:
+    - name: Print a greeting
+      env:
+        MY_VAR: Hi there! My name is
+        FIRST_NAME: Mona
+        MIDDLE_NAME: The
+        LAST_NAME: Octocat
       run: |
-        swiftlint
+        echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
