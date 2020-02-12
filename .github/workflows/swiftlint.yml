@@ -9,4 +9,5 @@ jobs:
     steps:
       - name: Swiftlint
         run: |
+          brew install swiftlint
           swiftlint
