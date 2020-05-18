@@ -8,7 +8,7 @@ jobs:
     runs-on: macOS-latest
     steps:
       - uses: actions/checkout@master
-      - name: Swiftlint
+      - name: SwiftLint
         run: |
           brew install swiftlint
           swiftlint --reporter github-actions-logging
